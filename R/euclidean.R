@@ -11,13 +11,10 @@ euclidean <- function(a,b){
   stopifnot(is.numeric(a),round(a)==a,length(a)== 1)
   stopifnot(is.numeric(b),round(b)==b,length(a)== 1)
 
-  while (a != b) {
-    if (a > b){
-      a <- a-b
-    }
-    else{
-      b <- b-a
-    }
+  while (b!= 0) {
+  t=b
+  b=a%%b
+  a=t
   }
   return(a)
 }
