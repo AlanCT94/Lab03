@@ -12,7 +12,7 @@ euclidean(a, b)
 \item{b}{integer}
 }
 \value{
-a
+greatest common divisor
 }
 \description{
 Euclidean Algorithm implementation
