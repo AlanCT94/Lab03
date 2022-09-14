@@ -8,8 +8,8 @@
 #'
 #' @examples euclidean(100, 1000)
 euclidean <- function(a,b){
-  stopifnot(is.numeric(a),round(a),length(a)== 1)
-  stopifnot(is.numeric(b),round(b),length(a)== 1)
+  stopifnot(is.numeric(a),round(a)==a,length(a)== 1)
+  stopifnot(is.numeric(b),round(b)==b,length(a)== 1)
 
   while (a != b) {
     if (a > b){
